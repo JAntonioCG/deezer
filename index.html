@@ -29,10 +29,41 @@
 
     <div class="musica">
       <div class="search">
-        <input type="text" id="searchArtist" class="searchInput">
+        <input type="text" id="searchArtist" class="searchInput" placeholder="Buscar artista">
         <button class="btnSearch" id="btnSearch">Buscar</button>
       </div>
-      <div class="musicaArtista"></div>
+      <div class="musicaArtista">
+        <div class="artista">
+          <div class="artistaImg">
+            <img src="" id="imgArtista" class="imagen">
+          </div>
+          <div class="artistaInfo">
+            <p class="tituloArtista">Artista</p>
+            <p class="descripcionArtista">Descripción del artista</p>
+            <p class="botonArtista">
+              <button>Escuchar</button>
+            </p>
+          </div>
+        </div>
+        <div class="musicaBusqueda">
+          <template id="templateMusica">
+            <div class="renglonCancion">
+              <div class="imgCancion">
+                <img src="" alt="">
+              </div>
+              <div class="tituloCancion">Canción</div>
+              <div class="albumCancion">Álbum</div>
+              <div class="duracionCancion">3:45</div>
+            </div>
+          </template>
+
+          <!-- Botones de navegación para las canciones -->
+          <div class="navegacion">
+            <button id="prevBtn" class="btnNavegacion">Previo</button>
+            <button id="nextBtn" class="btnNavegacion">Siguiente</button>
+          </div>          
+        </div>
+      </div>
     </div>
     <div class="reproduccion"></div>
   </div>
